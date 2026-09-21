@@ -1,0 +1,2370 @@
+[
+    {
+        "id": "8862c30b590da443",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7be6ea6ea9c24ccb",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "517ae35792521491",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#00b3ff",
+            "primary": "#f5f5f5",
+            "bgPage": "#ffffff",
+            "groupBg": "#e3e3e3",
+            "groupOutline": "#000000"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "d04178141b1f8e50",
+        "type": "ui-page",
+        "name": "PRINCIPAL",
+        "ui": "7be6ea6ea9c24ccb",
+        "path": "/page1",
+        "icon": "",
+        "layout": "grid",
+        "theme": "517ae35792521491",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "0346748e370ed095",
+        "type": "MySQLdatabase",
+        "name": "BaseDatos",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "Datos",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "9c02bfe844bd4cdb",
+        "type": "ui-page",
+        "name": "SENSORES",
+        "ui": "7be6ea6ea9c24ccb",
+        "path": "/page2",
+        "icon": "No",
+        "layout": "grid",
+        "theme": "517ae35792521491",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 4,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "d76c78117306fac4",
+        "type": "ui-page",
+        "name": "ALARMAS",
+        "ui": "7be6ea6ea9c24ccb",
+        "path": "/page3",
+        "icon": "No",
+        "layout": "grid",
+        "theme": "517ae35792521491",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "590e083b8064b06e",
+        "type": "ui-group",
+        "name": "Historico Alarmas",
+        "page": "d76c78117306fac4",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "2a07f0b48de88af6",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "cadb558c2e14111d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "tls": "2a07f0b48de88af6",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "5",
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "67441b9c85488a01",
+        "type": "ui-page",
+        "name": "GRAFICOS",
+        "ui": "7be6ea6ea9c24ccb",
+        "path": "/page4",
+        "icon": "No",
+        "layout": "grid",
+        "theme": "517ae35792521491",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "6816863ded66d059",
+        "type": "ui-group",
+        "name": "ESTADO",
+        "page": "d04178141b1f8e50",
+        "width": "12",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "e380cd85548c643a",
+        "type": "ui-group",
+        "name": "Robot",
+        "page": "67441b9c85488a01",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "dfeedbbcaa3e542c",
+        "type": "ui-group",
+        "name": "Soldadura",
+        "page": "67441b9c85488a01",
+        "width": 6,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "9d8ea1064422972b",
+        "type": "ui-group",
+        "name": "Alarmas",
+        "page": "d76c78117306fac4",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "13debae126742632",
+        "type": "ui-group",
+        "name": "OEE",
+        "page": "d04178141b1f8e50",
+        "width": "12",
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "b795cf7976e17a09",
+        "type": "ui-spacer",
+        "group": "13debae126742632",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 5,
+        "width": "12",
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "5086da3f61e755dc",
+        "type": "ui-group",
+        "name": "Bastidor",
+        "page": "67441b9c85488a01",
+        "width": 6,
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "fb9f2ea2c3b065dc",
+        "type": "ui-group",
+        "name": "Celula",
+        "page": "67441b9c85488a01",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "3cce5fba2f6d4cd0",
+        "type": "ui-group",
+        "name": "Valores",
+        "page": "9c02bfe844bd4cdb",
+        "width": "12",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "f7aaf230a8572ccc",
+        "type": "ui-group",
+        "name": "TIEMPOS",
+        "page": "d04178141b1f8e50",
+        "width": "12",
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "5c5c94abb7878a4a",
+        "type": "ui-group",
+        "name": "CALIDAD",
+        "page": "d04178141b1f8e50",
+        "width": "12",
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "12a7697b057e9dd1",
+        "type": "ui-spacer",
+        "group": "f7aaf230a8572ccc",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 5,
+        "width": "12",
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "9838745990d602c6",
+        "type": "ui-group",
+        "name": "PRODUCCION",
+        "page": "d04178141b1f8e50",
+        "width": "12",
+        "height": 1,
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "924bf15b84d21479",
+        "type": "ui-group",
+        "name": "Camara",
+        "page": "67441b9c85488a01",
+        "width": 6,
+        "height": 1,
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "2c2b1c1c3b92340d",
+        "type": "mqtt in",
+        "z": "8862c30b590da443",
+        "name": "CNT",
+        "topic": "Fabrica/Celula1/CNT",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "cadb558c2e14111d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 720,
+        "wires": [
+            [
+                "e32ccbd116bcd3e6"
+            ]
+        ]
+    },
+    {
+        "id": "7f12818b32483a3a",
+        "type": "ui-chart",
+        "z": "8862c30b590da443",
+        "group": "dfeedbbcaa3e542c",
+        "name": "Soldadura",
+        "label": "Sensores Soldadura",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "24",
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "200000",
+        "colors": [
+            "#f6f85d",
+            "#ff0000",
+            "#ffb30f",
+            "#2ca02c",
+            "#a347e1",
+            "#000000",
+            "#ff9896",
+            "#67bcbb",
+            "#50a3e2"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#a3a3a3"
+        ],
+        "gridColorDefault": false,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 730,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "26df31679ab39b4a",
+        "type": "mqtt in",
+        "z": "8862c30b590da443",
+        "name": "ALARMAS",
+        "topic": "Fabrica/Celula1/Alarma",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "cadb558c2e14111d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "2896c3b81387eda2",
+                "55ccfcc36aca6953"
+            ]
+        ]
+    },
+    {
+        "id": "42b4491ec88d4a75",
+        "type": "mqtt in",
+        "z": "8862c30b590da443",
+        "name": "ESTADO",
+        "topic": "Fabrica/Celula1/Estado",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "cadb558c2e14111d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 240,
+        "wires": [
+            [
+                "fea208b031a3af2a",
+                "424b80046e053f60",
+                "e4e63177033e3ae4"
+            ]
+        ]
+    },
+    {
+        "id": "1711406f8018b776",
+        "type": "mqtt in",
+        "z": "8862c30b590da443",
+        "name": "SENSORICA",
+        "topic": "Fabrica/Celula1/Sensores",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "cadb558c2e14111d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 1140,
+        "wires": [
+            [
+                "82612d9bec014f4a"
+            ]
+        ]
+    },
+    {
+        "id": "82612d9bec014f4a",
+        "type": "function",
+        "z": "8862c30b590da443",
+        "name": "Decodificar",
+        "func": "let buf = Buffer.from(msg.payload);\n\nlet datos = {\n    Sol: {},\n    Bas: {},\n    Rob: {},\n    Cel: {},\n    Cam: {}\n};\n\nlet offset = 0;\n\n\n// REAL agrupados por equipos\nconst grupos = {\n    Sol: [\n        \"Intensidad\",\n        \"Tension_Fuente\",\n        \"Tension_Arco\",\n        \"Velocidad_Hilo\",\n        \"Caudal_Gas\",\n        \"Presion_Gas\",\n        \"Nivel_Gas\"\n    ],\n    Bas: [\n        \"Tension\",\n        \"Intensidad\",\n        \"Posicion\",\n        \"Velocidad\"\n    ],\n    Rob: [\n        \"Tension\",\n        \"Intensidad\",\n        \"Servo_Temp1\",\n        \"Servo_Temp2\",\n        \"Servo_Temp3\",\n        \"Servo_Temp4\",\n        \"Servo_Temp5\",\n        \"Servo_Temp6\",\n        \"VelocidadSol\",\n        \"DistanciaSol\",\n    ],\n    Cel: [\n        \"TensionF1\",\n        \"TensionF2\",\n        \"TensionF3\",\n        \"Intensidad\",\n        \"FactorPotencia\"\n    ]\n};\n\n// Leer REAL (4 bytes)\nfor (let grupo in grupos) {\n    for (let nombre of grupos[grupo]) {\n\n        datos[grupo][nombre] = Number(\n            buf.readFloatLE(offset).toFixed(2)\n        );\n\n        offset += 4;\n    }\n}\n\n// UINT\ndatos.Cam.PuntosInt = buf.readUInt16LE(offset);\noffset += 2;\n\ndatos.Cam.NSoldaduras = buf.readUInt16LE(offset);\n\n// Salida\nmsg.payload = datos;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1140,
+        "wires": [
+            [
+                "0a5c3427d8263aa7",
+                "1f37afee1b64328c",
+                "46505b7dbe2aa93b",
+                "0b5619b615b82462",
+                "fefe2492514da01f",
+                "6437c3583a1f895a"
+            ]
+        ]
+    },
+    {
+        "id": "0a5c3427d8263aa7",
+        "type": "function",
+        "z": "8862c30b590da443",
+        "name": "Soldadura Chart",
+        "func": "let sol = msg.payload.Sol;\n\nfor (let variable in sol) {\n\n    node.send({\n        topic: variable,\n        payload: sol[variable],\n    });\n\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 1160,
+        "wires": [
+            [
+                "7f12818b32483a3a"
+            ]
+        ]
+    },
+    {
+        "id": "2896c3b81387eda2",
+        "type": "ui-template",
+        "z": "8862c30b590da443",
+        "group": "9d8ea1064422972b",
+        "page": "",
+        "ui": "",
+        "name": "Indicador alarma",
+        "order": 1,
+        "width": "2",
+        "height": "2",
+        "head": "",
+        "format": "<template>\n    <v-icon\n        :color=\"msg.payload.Alarmas > 0 ? 'red' : 'grey'\"\n        size=\"80\"\n    >\n        mdi-alert-circle\n    </v-icon>\n</template>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 390,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f37afee1b64328c",
+        "type": "function",
+        "z": "8862c30b590da443",
+        "name": "Bastidor Chart",
+        "func": "let bas = msg.payload.Bas;\n\nfor (let variable in bas) {\n\n    node.send({\n        topic: variable,\n        payload: bas[variable],\n    });\n\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 1120,
+        "wires": [
+            [
+                "1badc4f9b594cea1"
+            ]
+        ]
+    },
+    {
+        "id": "1badc4f9b594cea1",
+        "type": "ui-chart",
+        "z": "8862c30b590da443",
+        "group": "5086da3f61e755dc",
+        "name": "Bastidor",
+        "label": "Sensores Bastidor",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "24",
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#ffffff",
+            "#ff0000",
+            "#ffb30f",
+            "#2ca02c",
+            "#a347e1",
+            "#000000",
+            "#ff9896",
+            "#67bcbb",
+            "#50a3e2"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#a3a3a3"
+        ],
+        "gridColorDefault": false,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 720,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "adaf01821c926209",
+        "type": "ui-table",
+        "z": "8862c30b590da443",
+        "group": "9d8ea1064422972b",
+        "name": "Alarmas",
+        "label": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": false,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [
+            {
+                "title": "Alarma",
+                "key": "alarma",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Fecha",
+                "key": "fecha",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Hora",
+                "key": "hora",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Estado",
+                "key": "estado",
+                "keyType": "key",
+                "type": "html",
+                "width": "",
+                "align": "end"
+            }
+        ],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 760,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e61e1dfb9f4b8818",
+        "type": "function",
+        "z": "8862c30b590da443",
+        "name": "Alarmas activas",
+        "func": "let activas = context.get(\"activas\") || [];\n//Recorremos cada evento del mensaje\nfor (const evento of msg.payload) {\n    //buscamos indice en activas con alarma, para saber si esta en la tabla\n    const indice = activas.findIndex(n => n.alarma === evento.alarma);\n    //Si esta activa y no esta añadida la añado\n    if (evento.activa) {\n        if (indice === -1) {\n            activas.unshift(evento);\n        }\n    } else { //si no esta activa y esta presente la quito\n        if (indice !== -1) {\n            activas.splice(indice, 1); //elimina 1 elemento de posicion indice\n        }\n    }\n}\n\ncontext.set(\"activas\", activas);\n\nmsg.payload = activas;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 60,
+        "wires": [
+            [
+                "adaf01821c926209"
+            ]
+        ]
+    },
+    {
+        "id": "55ccfcc36aca6953",
+        "type": "function",
+        "z": "8862c30b590da443",
+        "name": "Desempaquetado",
+        "func": "const alarmas = msg.payload.Alarmas;\n\nconst nombres = [\n    \"Seta emergencia\",\n    \"Puerta\",\n    \"Barrera\",\n    \"Emergencia\",\n    \"Robot\",\n    \"Camara\",\n    \"Soldadura\",\n    \"Bastidor\",\n    \"MQTT\",\n    \"Ciclo\",\n    \"Reserva10\",\n    \"Reserva11\",\n    \"Reserva12\",\n    \"Reserva13\",\n    \"Reserva14\",\n    \"Reserva15\",\n    \"Reserva16\",\n    \"Reserva17\",\n    \"Reserva18\",\n    \"Reserva19\",\n    \"Reserva20\",\n    \"Reserva21\",\n    \"Reserva22\",\n    \"Reserva23\",\n    \"Reserva24\",\n    \"Reserva25\",\n    \"Reserva26\",\n    \"Reserva27\",\n    \"Reserva28\",\n    \"Reserva29\",\n    \"Reserva30\",\n    \"Reserva31\"\n];\n\n// Recupero valores guardados\nconst anterior = context.get(\"alarmasAnterior\") ?? 0;\nlet historial = context.get(\"historialAlarmas\") ?? [];\n\nconst ahora = new Date();\nlet eventos = [];\n\nfor (let i = 0; i < 32; i++) {\n    //desplazo bit que quiero mirar y comparo con 1\n    const antes = ((anterior >>> i) & 1) === 1;\n    const actual = ((alarmas >>> i) & 1) === 1;\n\n    if (antes !== actual) {\n\n        const evento = {\n            alarma: nombres[i],\n            fecha: ahora.toLocaleDateString(\"es-ES\"),\n            hora: ahora.toLocaleTimeString(\"es-ES\"),\n            activa: actual,\n            estado: actual\n                ? '<span style=\"background-color:#dc3545;color:white;font-weight:bold;padding:4px 10px;border-radius:5px;display:inline-block\">ALARMA</span>'\n                : '<span style=\"background-color:#198754;color:white;font-weight:bold;padding:4px 10px;border-radius:5px;display:inline-block\">OK</span>'\n        };\n        //meto en array de eventos la alarma detectada\n        eventos.push(evento);\n\n        // Añadir alarma al histórico\n        historial.push(evento);\n    }\n}\n\n// Limitar memoria (últimas 500 alarmas)\nif (historial.length > 500) {\n    historial = historial.slice(-500); //borra a partir del elemento 500\n}\n\n// Guardar datos\ncontext.set(\"alarmasAnterior\", alarmas);\ncontext.set(\"historialAlarmas\", historial);\n\n// Enviar los eventos nuevos\nmsg.payload = eventos;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 100,
+        "wires": [
+            [
+                "e61e1dfb9f4b8818",
+                "91426afd6dbafa80"
+            ]
+        ]
+    },
+    {
+        "id": "fea208b031a3af2a",
+        "type": "function",
+        "z": "8862c30b590da443",
+        "name": "Modo",
+        "func": "let modo = msg.payload.Modo;\n\nswitch (modo) {\n    case 0:\n        msg.payload = \"Emergencia\";\n        break;\n\n    case 1:\n        msg.payload = \"Auto\";\n        break;\n\n    case 2:\n        msg.payload = \"Manual\";\n        break;\n\n    default:\n        msg.payload = \"Emergencia\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 240,
+        "wires": [
+            [
+                "421ae3088f7e9c3d"
+            ]
+        ]
+    },
+    {
+        "id": "424b80046e053f60",
+        "type": "ui-template",
+        "z": "8862c30b590da443",
+        "group": "6816863ded66d059",
+        "page": "",
+        "ui": "",
+        "name": "Estados",
+        "order": 2,
+        "width": "12",
+        "height": "2",
+        "head": "",
+        "format": "<template>\n    <div class=\"flow\">\n        <div :class=\"['step', estado==0 ? 'active':'']\">Reposo</div>\n        <div class=\"arrow\">➜</div>\n\n        <div :class=\"['step', estado==1 ? 'active':'']\">Bastidor</div>\n        <div class=\"arrow\">➜</div>\n\n        <div :class=\"['step', estado==2 ? 'active':'']\">Soldadura</div>\n        <div class=\"arrow\">➜</div>\n\n        <div :class=\"['step', estado==3 ? 'active':'']\">Calidad</div>\n        <div class=\"arrow\">➜</div>\n\n        <div :class=\"['step', estado==4 ? 'active':'']\">Retorno</div>\n    </div>\n</template>\n\n<script>\n    export default {\n    data() {\n        return {\n            estado: 0 //Se inicializa a 0\n        }\n    },\n    watch: { //Cada vez que cambie msg, ejecuta esta función\n        msg() {\n            if (this.msg?.payload?.Estado !== undefined) {\n                this.estado = this.msg.payload.Estado\n            }\n        }\n    }\n}\n</script>\n\n<style>\n    .flow {\n        width: 100%;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        gap: 12px;\n        flex-wrap: wrap;\n    }\n\n    .step {\n        min-width: 180px;\n        text-align: center;\n        padding: 15px;\n        border: 2px solid #888;\n        border-radius: 10px;\n        background: #424242;\n        color: white;\n        font-weight: bold;\n        font-size: 22px;\n        transition: .3s;\n    }\n\n    .arrow {\n        font-size: 32px;\n        color: #888;\n    }\n\n    .active {\n        background: #2ecc71;\n        border-color: #27ae60;\n        color: white;\n        box-shadow: 0 0 15px #2ecc71;\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 340,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "421ae3088f7e9c3d",
+        "type": "ui-text",
+        "z": "8862c30b590da443",
+        "group": "6816863ded66d059",
+        "order": 1,
+        "width": "12",
+        "height": "1",
+        "name": "Texto",
+        "label": "MODO: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": true,
+        "font": "",
+        "fontSize": "18",
+        "color": "#000000",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 510,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "e32ccbd116bcd3e6",
+        "type": "function",
+        "z": "8862c30b590da443",
+        "name": "Produccion",
+        "func": "let d = msg.payload;\n\n//PIEZA A\nlet PA_OK = d.PA_CAM_OK;\nlet PA_NOK = d.PA_Sol_NOK + d.PA_CAM_NOK;\nlet PA_TOTAL = PA_OK + PA_NOK;\n\n//PIEZA B\nlet PB_OK = d.PB_CAM_OK;\nlet PB_NOK = d.PB_Sol_NOK + d.PB_CAM_NOK;\nlet PB_TOTAL = PB_OK + PB_NOK;\n\n//PIEZAS TOTALES\nlet Sol_OK_TOTAL = d.PA_Sol_OK + d.PB_Sol_OK;\nlet Sol_NOK_TOTAL = d.PA_Sol_NOK + d.PB_Sol_NOK;\n\nlet CAM_OK_TOTAL = d.PA_CAM_OK + d.PB_CAM_OK;\nlet CAM_NOK_TOTAL = d.PA_CAM_NOK + d.PB_CAM_NOK;\n\nlet OK_TOTAL = PA_OK + PB_OK;\nlet NOK_TOTAL = PA_NOK + PB_NOK;\nlet TOTAL = OK_TOTAL + NOK_TOTAL;\n\n\nmsg.payload = {\n    Ciclos: d.Ciclos,\n\n    PA_Sol_OK: d.PA_Sol_OK,\n    PA_Sol_NOK: d.PA_Sol_NOK,\n    PA_CAM_OK: d.PA_CAM_OK,\n    PA_CAM_NOK: d.PA_CAM_NOK,\n    PA_OK: PA_OK,\n    PA_NOK: PA_NOK,\n    PA_TOTAL: PA_TOTAL,\n\n    PB_Sol_OK: d.PB_Sol_OK,\n    PB_Sol_NOK: d.PB_Sol_NOK,\n    PB_CAM_OK: d.PB_CAM_OK,\n    PB_CAM_NOK: d.PB_CAM_NOK,\n    PB_OK: PB_OK,\n    PB_NOK: PB_NOK,\n    PB_TOTAL: PB_TOTAL,\n\n    Sol_OK_TOTAL: Sol_OK_TOTAL,\n    Sol_NOK_TOTAL: Sol_NOK_TOTAL,\n    CAM_OK_TOTAL: CAM_OK_TOTAL,\n    CAM_NOK_TOTAL: CAM_NOK_TOTAL,\n\n    OK_TOTAL: OK_TOTAL,\n    NOK_TOTAL: NOK_TOTAL,\n    TOTAL: TOTAL,\n\n};\n\n// GUARDAR TODO EL PAYLOAD EN MEMORIA\ncontext.set(\"Produccion\", msg.payload, \"default\");\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 720,
+        "wires": [
+            [
+                "ab223bc9014eddfa",
+                "5634f53048f2a8aa"
+            ]
+        ]
+    },
+    {
+        "id": "e4e63177033e3ae4",
+        "type": "function",
+        "z": "8862c30b590da443",
+        "name": "Tiempos",
+        "func": "let estado = Number(msg.payload.Estado);\nlet modo = Number(msg.payload.Modo);\n\nlet ahora = Date.now();\n\n// LEER DATOS\nlet datos = flow.get(\"tiempos\", \"default\");\nlet arranque = context.get(\"arranque\", \"memoryOnly\");\n\nif (!datos) {\n\n    datos = {\n\n        // Tiempo general\n        inicio: ahora,\n        ultimoTiempo: ahora,\n\n        //Tiempos Historico\n        T_TOTAL: 0,\n        T_EMER: 0,\n        T_AUTO: 0,\n        T_MANUAL: 0,\n\n        T_TOTAL_H: 0,\n        T_EMER_H: 0,\n        T_AUTO_H: 0,\n        T_MANUAL_H: 0,\n\n        // Tiempos estados\n        T_REPOSO: 0,\n        T_BASTIDOR: 0,\n        T_SOLDADURA: 0,\n        T_CALIDAD: 0,\n        T_RETORNO: 0,\n\n        // Ciclo\n        cicloInicio: null,\n        reposoInicio: ahora,\n        T_CICLO: 0,\n\n        // Estado anterior\n        estadoAnterior: estado,\n        modoAnterior: modo\n    };\n}\n\n// REINICIAR TIEMPOS DE CICLO UNA SOLA VEZ\nif (!arranque) {\n\n    datos.cicloInicio = null;\n    datos.reposoInicio = ahora;\n\n    datos.T_CICLO = 0;\n    datos.T_REPOSO = 0;\n    datos.T_BASTIDOR = 0;\n    datos.T_SOLDADURA = 0;\n    datos.T_CALIDAD = 0;\n    datos.T_RETORNO = 0;\n\n    // Evita contabilizar el tiempo transcurrido\n    // desde el último mensaje antes del reinicio\n    datos.ultimoTiempo = ahora;\n\n    context.set(\"arranque\", true, \"memoryOnly\");\n}\n\n// TIEMPO TRANSCURRIDO(segundos)\nlet dt = (ahora - datos.ultimoTiempo)/1000;\n\n// ACUMULAR TIEMPO POR MODO\nswitch (datos.modoAnterior) {\n    case 0:\n        datos.T_EMER += dt;\n        break;\n    case 1:\n        datos.T_AUTO += dt;\n        break;\n    case 2:\n        datos.T_MANUAL += dt;\n        break;\n}\n\n// ACUMULAR TIEMPO POR ESTADO\nswitch (datos.estadoAnterior) {\n    case 0:\n        //datos.T_REPOSO += dt;\n        break;\n    case 1:\n        datos.T_BASTIDOR += dt;\n        break;\n    case 2:\n        datos.T_SOLDADURA += dt;\n        break;\n    case 3:\n        datos.T_CALIDAD += dt;\n        break;\n    case 4:\n        datos.T_RETORNO += dt;\n        break;\n}\n\n// TIEMPO TOTAL\ndatos.T_TOTAL = datos.T_EMER + datos.T_AUTO + datos.T_MANUAL;\n\n// INICIO DEL CICLO: Reposo (0) → Bastidor (1)\nif (datos.estadoAnterior === 0 && estado === 1) {\n\n    // Calcular cuánto tiempo ha estado en reposo\n    if (datos.reposoInicio !== null) {\n        datos.T_REPOSO = (ahora - datos.reposoInicio) / 1000;\n    } else {\n        datos.T_REPOSO = 0;\n    }\n    datos.cicloInicio = ahora;\n\n    // RESET TIEMPOS DEL CICLO\n    datos.T_CICLO = 0;\n    datos.T_BASTIDOR = 0;\n    datos.T_SOLDADURA = 0;\n    datos.T_CALIDAD = 0;\n    datos.T_RETORNO = 0;\n}\n\n// FINAL DEL CICLO: Retorno (4) → Reposo (0)\nif (datos.estadoAnterior === 4 && estado === 0) {\n    // Comienza el tiempo de reposo\n    datos.reposoInicio = ahora;\n\n    if (datos.cicloInicio !== null) {\n        //datos.T_CICLO = (ahora - datos.cicloInicio) / 1000;\n        datos.T_CICLO = datos.T_BASTIDOR + datos.T_SOLDADURA + datos.T_CALIDAD + datos.T_RETORNO;\n        datos.cicloInicio = null;\n    }\n}\n\n// ACTUALIZAR DATOS\nif (datos.cicloInicio !== null) {\n    datos.T_CICLO = (ahora - datos.cicloInicio) / 1000;\n}\ndatos.ultimoTiempo = ahora;\ndatos.estadoAnterior = estado;\ndatos.modoAnterior = modo;\n// TIEMPOS EN HORAS\ndatos.T_TOTAL_H=Number((datos.T_TOTAL/ 3600).toFixed(2));\ndatos.T_EMER_H=Number((datos.T_EMER/ 3600).toFixed(2));\ndatos.T_AUTO_H=Number((datos.T_AUTO/ 3600).toFixed(2));\ndatos.T_MANUAL_H=Number((datos.T_MANUAL/ 3600).toFixed(2));\n\n// GUARDAR DATOS\nflow.set(\"tiempos\", datos, \"default\");\n\n// INDICADORES DE TIEMPO\nlet indicadorAuto = 0;\nlet indicadorManual = 0;\nlet indicadorEmer = 0;\nlet indicadorNoProduc = 0;\n\nif (datos.T_TOTAL > 0) {\n    // Tiempo automático / tiempo total\n    indicadorAuto = (datos.T_AUTO / datos.T_TOTAL) * 100;\n    // Tiempo manual / tiempo total\n    indicadorManual = (datos.T_MANUAL / datos.T_TOTAL) * 100;\n    // Tiempo emergencia / tiempo total\n    indicadorEmer = (datos.T_EMER / datos.T_TOTAL) * 100;\n    // Tiempo no productivo\n    indicadorNoProduc =((datos.T_MANUAL + datos.T_EMER) / datos.T_TOTAL) * 100;\n}\n\n// SALIDA\nmsg.payload = {\n    //Tiempos acumulados\n    T_EMER: datos.T_EMER_H,\n    T_AUTO: datos.T_AUTO_H,\n    T_MANUAL: datos.T_MANUAL_H,\n    T_TOTAL: datos.T_TOTAL_H,\n\n    // INDICADORES DE TIEMPO\n    IndicadorAuto: Number(indicadorAuto.toFixed(2)),\n    IndicadorManual: Number(indicadorManual.toFixed(2)),\n    IndicadorEmer: Number(indicadorEmer.toFixed(2)),\n    IndicadorNoAuto: Number(indicadorNoProduc.toFixed(2)),\n    \n    //Tiempos ciclo actual:\n    T_CICLO: datos.T_CICLO.toFixed(2),\n    T_REPOSO: datos.T_REPOSO.toFixed(2),\n    T_BASTIDOR: datos.T_BASTIDOR.toFixed(2),\n    T_SOLDADURA: datos.T_SOLDADURA.toFixed(2),\n    T_CALIDAD: datos.T_CALIDAD.toFixed(2),\n    T_RETORNO: datos.T_RETORNO.toFixed(2),\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 320,
+        "wires": [
+            [
+                "a16edf5cf9db818c",
+                "1264ef5bdc789b9b",
+                "d44c6f5c91306d1f",
+                "607b0545191939d4",
+                "a77968f5625bb7c0",
+                "1558f8575fa994bf"
+            ]
+        ]
+    },
+    {
+        "id": "ac055cd22c645d27",
+        "type": "ui-text-input",
+        "z": "8862c30b590da443",
+        "group": "13debae126742632",
+        "name": "Tiempo Ciclo Ideal",
+        "label": "Tiempo Ciclo Ideal (s)",
+        "order": 6,
+        "width": "2",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "number",
+        "tooltip": "",
+        "delay": "50000",
+        "passthru": false,
+        "sendOnDelay": true,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 990,
+        "y": 640,
+        "wires": [
+            [
+                "21d69027d0372634"
+            ]
+        ]
+    },
+    {
+        "id": "21d69027d0372634",
+        "type": "function",
+        "z": "8862c30b590da443",
+        "name": "Gestion TCI",
+        "func": "let tiempo = Number(msg.payload);\n\n// Comprobar que es un número válido\nif (isNaN(tiempo) || tiempo <= 0) {\n    tiempo = 40;\n}\n\n// Guardar ciclo ideal\nflow.set(\"TCicloIdeal\", tiempo, \"default\");\n\n// Devolver valor al Dashboard\nmsg.payload = tiempo;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 640,
+        "wires": [
+            [
+                "ac055cd22c645d27"
+            ]
+        ]
+    },
+    {
+        "id": "ab223bc9014eddfa",
+        "type": "function",
+        "z": "8862c30b590da443",
+        "name": "KPI",
+        "func": "// INVERSA DE LA DISTRIBUCIÓN NORMAL\nfunction normalInverse(p) {\n\n    if (p <= 0 || p >= 1) {\n        return NaN;\n    }\n\n    const a1 = -39.6968302866538;\n    const a2 = 220.946098424521;\n    const a3 = -275.928510446969;\n    const a4 = 138.357751867269;\n    const a5 = -30.6647980661472;\n    const a6 = 2.50662827745924;\n\n    const b1 = -54.4760987982241;\n    const b2 = 161.585836858041;\n    const b3 = -155.698979859887;\n    const b4 = 66.8013118877197;\n    const b5 = -13.2806815528857;\n\n    const c1 = -0.00778489400243029;\n    const c2 = -0.322396458041136;\n    const c3 = -2.40075827716184;\n    const c4 = -2.54973253934373;\n    const c5 = 4.37466414146497;\n    const c6 = 2.93816398269878;\n\n    const d1 = 0.00778469570904146;\n    const d2 = 0.32246712907004;\n    const d3 = 2.445134137143;\n    const d4 = 3.75440866190742;\n\n    const pLow = 0.02425;\n    const pHigh = 1 - pLow;\n\n    let q;\n    let r;\n\n    if (p < pLow) {\n\n        q = Math.sqrt(-2 * Math.log(p));\n\n        return (((((c1 * q + c2) * q + c3) * q + c4) * q + c5) * q + c6) /\n               ((((d1 * q + d2) * q + d3) * q + d4) * q + 1);\n\n    }\n\n    if (p <= pHigh) {\n\n        q = p - 0.5;\n        r = q * q;\n\n        return (((((a1 * r + a2) * r + a3) * r + a4) * r + a5) * r + a6) * q /\n               (((((b1 * r + b2) * r + b3) * r + b4) * r + b5) * r + 1);\n\n    }\n\n    q = Math.sqrt(-2 * Math.log(1 - p));\n\n    return -(((((c1 * q + c2) * q + c3) * q + c4) * q + c5) * q + c6) /\n             ((((d1 * q + d2) * q + d3) * q + d4) * q + 1);\n}\n\n\n// RECUPERAR TIEMPOS\nlet tiempos = flow.get(\"tiempos\", \"default\");\n\nif (!tiempos) {\n    node.warn(\"No existen datos de tiempos\");\n    return null;\n}\n\n// RECUPERAR PARÁMETROS OEE\nlet tiempoCicloIdeal = flow.get(\"TCicloIdeal\", \"default\") || 0;\n\n// RECUPERAR OBJETIVO DPMO\nlet DPMO_Objetivo = Number(flow.get(\"DPMO_Objetivo\", \"default\")) || 0;\n\n// RECUPERAR CONTADORES\nlet d = msg.payload;\n\nlet OK = Number(d.OK_TOTAL) || 0;\nlet NOK = Number(d.NOK_TOTAL) || 0;\nlet TOTAL = Number(d.TOTAL) || 0;\n\n// TIEMPO DE FUNCIONAMIENTO (T_AUTO en s)\nlet tiempoFuncionamiento = Number(tiempos.T_AUTO) || 0;\nlet tiempoTotal = Number(tiempos.T_TOTAL) || 0;\n\n// DISPONIBILIDAD\nlet disponibilidad = 0;\n\nif (tiempoFuncionamiento > 0) {\n    disponibilidad =\n        tiempoFuncionamiento / tiempoTotal;\n}\n\n// RENDIMIENTO\nlet rendimiento = 0;\n\nif (tiempoFuncionamiento > 0 && tiempoCicloIdeal > 0) {\n    rendimiento =(TOTAL * tiempoCicloIdeal) /tiempoFuncionamiento;\n}\n\n// CALIDAD\nlet calidad = 0;\n\nif (TOTAL > 0) {\n    calidad = OK / TOTAL;\n}\n\n// OEE\nlet OEE =disponibilidad * rendimiento * calidad;\n\n//INDICADORES CALIDAD:\nconst N_oportunidades = 32;\nlet DPU = 0;\nlet DPMO = 0;\nlet Indicador_DPMO = 0;\nlet Z = 0;\nlet Sigma = 0;\n\nif (TOTAL > 0) {\n    // DPU\n    DPU = NOK / TOTAL;\n\n    // DPMO\n    DPMO = DPU * 1000000 / N_oportunidades;\n\n    // Comparación con objetivo\n    if (DPMO_Objetivo > 0) {\n        Indicador_DPMO = DPMO / DPMO_Objetivo;\n    }\n    // Rendimiento\n    const Yield = 1 - (DPMO / 1000000);\n\n    if (NOK === 0) {\n        Sigma = 6;\n    } else {\n        Z = normalInverse(Yield);\n        Sigma = Z + 1.5;\n    }\n}\n\n// SALIDA\nmsg.payload = {\n\n    // Tiempo\n    TiempoTotal: tiempoTotal,\n    TiempoFuncionamientoAuto: tiempoFuncionamiento,\n    TiempoCicloIdeal: tiempoCicloIdeal,\n\n    // Producción\n    OK_TOTAL: OK,\n    NOK_TOTAL: NOK,\n    TOTAL: TOTAL,\n\n    // KPI\n    Disponibilidad: Number((disponibilidad * 100).toFixed(2)),\n    Rendimiento: Number((rendimiento * 100).toFixed(2)),\n    Calidad: Number((calidad * 100).toFixed(2)),\n    OEE: Number((OEE * 100).toFixed(2)),\n\n    // SIX SIGMA\n    DPU: Number(DPU.toFixed(2)),\n    DPMO: Number(DPMO.toFixed(2)),\n    DPMO_Objetivo: DPMO_Objetivo,\n    Sigma: Number(Sigma.toFixed(2))\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 720,
+        "wires": [
+            [
+                "eedfcb39d21a7a6e",
+                "944ad9ab35877f91",
+                "eea38b1925b3b009",
+                "388b3929d72569ec",
+                "954737629bf8addc",
+                "b75b2beb70de5d78",
+                "2c42e7fc0a02f1d7",
+                "12f2a07025f9932d"
+            ]
+        ]
+    },
+    {
+        "id": "9e226c69bf08d0f1",
+        "type": "ui-button",
+        "z": "8862c30b590da443",
+        "group": "13debae126742632",
+        "name": "RESET",
+        "label": "Reset Tiempos",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 140,
+        "y": 380,
+        "wires": [
+            [
+                "5a87fc9c51224787"
+            ]
+        ]
+    },
+    {
+        "id": "5a87fc9c51224787",
+        "type": "function",
+        "z": "8862c30b590da443",
+        "name": "Reset Tiempos",
+        "func": "// RESETEAR TIEMPOS HISTÓRICOS\n\nlet datos = flow.get(\"tiempos\", \"default\");\n\nif (!datos) {\n    node.warn(\"No existe la variable tiempos\");\n    return null;\n}\n\n// Poner históricos a cero\ndatos.T_TOTAL = 0;\ndatos.T_EMER = 0;\ndatos.T_AUTO = 0;\ndatos.T_MANUAL = 0;\n\n// Reiniciar referencia temporal\nlet ahora = Date.now();\n\ndatos.inicio = ahora;\ndatos.ultimoTiempo = ahora;\n\n// Guardar\nflow.set(\"tiempos\", datos, \"default\");\n\nnode.status({\n    fill: \"green\",\n    shape: \"dot\",\n    text: \"Tiempos históricos reseteados\"\n});\n\nmsg.payload = {\n    reset: true,\n    mensaje: \"Tiempos históricos reseteados\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eedfcb39d21a7a6e",
+        "type": "ui-gauge",
+        "z": "8862c30b590da443",
+        "name": "Disponibilidad",
+        "group": "13debae126742632",
+        "order": 2,
+        "value": "payload.Disponibilidad",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Disponibilidad",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "70",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "90",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 740,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "944ad9ab35877f91",
+        "type": "ui-gauge",
+        "z": "8862c30b590da443",
+        "name": "Rendimiento",
+        "group": "13debae126742632",
+        "order": 3,
+        "value": "payload.Rendimiento",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Rendimiento",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "70",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "90",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 730,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eea38b1925b3b009",
+        "type": "ui-gauge",
+        "z": "8862c30b590da443",
+        "name": "Calidad",
+        "group": "13debae126742632",
+        "order": 4,
+        "value": "payload.Calidad",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Calidad",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "70",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "90",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 720,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "388b3929d72569ec",
+        "type": "ui-gauge",
+        "z": "8862c30b590da443",
+        "name": "OEE",
+        "group": "13debae126742632",
+        "order": 1,
+        "value": "payload.OEE",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "OEE",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "70",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "85",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 710,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4cb52b1b6a79cdf8",
+        "type": "ui-table",
+        "z": "8862c30b590da443",
+        "group": "9838745990d602c6",
+        "name": "Contadores",
+        "label": "",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "maxrows": "0",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 730,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5634f53048f2a8aa",
+        "type": "function",
+        "z": "8862c30b590da443",
+        "name": "TablaCNT",
+        "func": "let d = msg.payload;\n\n//Organizacion en array para tabla\nmsg.payload = [\n    {\n        Tipo: \"PIEZA A\",\n        \"Sol OK\": d.PA_Sol_OK,\n        \"Sol NOK\": d.PA_Sol_NOK,\n        \"Cam OK\": d.PA_CAM_OK,\n        \"Cam NOK\": d.PA_CAM_NOK,\n        OK: d.PA_OK,\n        NOK: d.PA_NOK,\n        TOTAL: d.PA_TOTAL\n    },\n    {\n        Tipo: \"PIEZA B\",\n        \"Sol OK\": d.PB_Sol_OK,\n        \"Sol NOK\": d.PB_Sol_NOK,\n        \"Cam OK\": d.PB_CAM_OK,\n        \"Cam NOK\": d.PB_CAM_NOK,\n        OK: d.PB_OK,\n        NOK: d.PB_NOK,\n        TOTAL: d.PB_TOTAL\n    },\n    {\n        Tipo: \"GLOBAL\",\n        \"Sol OK\": d.Sol_OK_TOTAL,\n        \"Sol NOK\": d.Sol_NOK_TOTAL,\n        \"Cam OK\": d.CAM_OK_TOTAL,\n        \"Cam NOK\": d.CAM_NOK_TOTAL,\n        OK: d.OK_TOTAL,\n        NOK: d.NOK_TOTAL,\n        TOTAL: d.TOTAL\n    }\n];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 960,
+        "wires": [
+            [
+                "4cb52b1b6a79cdf8"
+            ]
+        ]
+    },
+    {
+        "id": "46505b7dbe2aa93b",
+        "type": "function",
+        "z": "8862c30b590da443",
+        "name": "Robot Chart",
+        "func": "let rob = msg.payload.Rob;\n\nfor (let variable in rob) {\n\n    node.send({\n        topic: variable,\n        payload: rob[variable],\n    });\n\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1080,
+        "wires": [
+            [
+                "df508db13704a734"
+            ]
+        ]
+    },
+    {
+        "id": "df508db13704a734",
+        "type": "ui-chart",
+        "z": "8862c30b590da443",
+        "group": "e380cd85548c643a",
+        "name": "Robot",
+        "label": "Sensores Robot",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "24",
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#fcfe62",
+            "#ff0000",
+            "#ffb30f",
+            "#2ca02c",
+            "#a347e1",
+            "#000000",
+            "#ff9896",
+            "#67bcbb",
+            "#50a3e2"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#a3a3a3"
+        ],
+        "gridColorDefault": false,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 710,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0b5619b615b82462",
+        "type": "function",
+        "z": "8862c30b590da443",
+        "name": "Celula Chart",
+        "func": "let cel = msg.payload.Cel;\n\nfor (let variable in cel) {\n\n    node.send({\n        topic: variable,\n        payload: cel[variable],\n    });\n\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1040,
+        "wires": [
+            [
+                "c923b61de746ffd0"
+            ]
+        ]
+    },
+    {
+        "id": "c923b61de746ffd0",
+        "type": "ui-chart",
+        "z": "8862c30b590da443",
+        "group": "fb9f2ea2c3b065dc",
+        "name": "Celula",
+        "label": "Sensores Celula",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "24",
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#ffffff",
+            "#ff0000",
+            "#ffb30f",
+            "#2ca02c",
+            "#a347e1",
+            "#000000",
+            "#ff9896",
+            "#67bcbb",
+            "#50a3e2"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#a3a3a3"
+        ],
+        "gridColorDefault": false,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 710,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8469904a9613a427",
+        "type": "function",
+        "z": "8862c30b590da443",
+        "name": "Guardar limites",
+        "func": "let p = msg.payload;\n\nif (!p || !p.id || !p.campo) {\n    return null;\n}\n\nlet configuracion = flow.get(\"config_variables\", \"default\") || {};\n\n// Crear configuración si no existe\nif (!configuracion[p.id]) {\n\n    configuracion[p.id] = {\n        min: 0,\n        max: 100,\n        aviso: 5,\n        usarMin: true,\n        usarMax: true\n    };\n}\n\n// Guardar booleanos como booleanos\nif (p.campo === \"usarMin\" || p.campo === \"usarMax\") {\n\n    configuracion[p.id][p.campo] = Boolean(p.valor);\n\n}\n// Guardar valores numéricos\nelse {\n    configuracion[p.id][p.campo] = Number(p.valor);\n}\n\n// Guardar configuración\nflow.set(\"config_variables\", configuracion, \"default\");\n\nreturn null;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "91426afd6dbafa80",
+        "type": "ui-table",
+        "z": "8862c30b590da443",
+        "group": "590e083b8064b06e",
+        "name": "Historico",
+        "label": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "25",
+        "passthru": false,
+        "autocols": false,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [
+            {
+                "title": "Alarma",
+                "key": "alarma",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Fecha",
+                "key": "fecha",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Hora",
+                "key": "hora",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Estado",
+                "key": "estado",
+                "keyType": "key",
+                "type": "html",
+                "width": "",
+                "align": "end"
+            }
+        ],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "append",
+        "className": "",
+        "x": 760,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dbb5ab122efb9088",
+        "type": "ui-number-input",
+        "z": "8862c30b590da443",
+        "group": "5c5c94abb7878a4a",
+        "name": "DMPO_Objetivo",
+        "label": "DMPO_Objetivo",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "5000",
+        "step": 1,
+        "tooltip": "",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "spinner": "default",
+        "x": 980,
+        "y": 860,
+        "wires": [
+            [
+                "6e2f0f4b0b66ca6c"
+            ]
+        ]
+    },
+    {
+        "id": "6e2f0f4b0b66ca6c",
+        "type": "function",
+        "z": "8862c30b590da443",
+        "name": "Gestion DMPO",
+        "func": "let objetivo = Number(msg.payload);\n\n// Comprobar que es un número válido\nif (isNaN(objetivo) || objetivo <= 0) {\n    objetivo = 1000;\n}\n\n// Guardar ciclo ideal\nflow.set(\"DPMO_Objetivo\", objetivo, \"default\");\n\n// Devolver valor al Dashboard\nmsg.payload = objetivo;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 860,
+        "wires": [
+            [
+                "dbb5ab122efb9088"
+            ]
+        ]
+    },
+    {
+        "id": "954737629bf8addc",
+        "type": "ui-gauge",
+        "z": "8862c30b590da443",
+        "name": "DPMO/Objetivo",
+        "group": "5c5c94abb7878a4a",
+        "order": 1,
+        "value": "payload.Indicador_DPMO",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "DPMO/Objetivo",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "1",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "2",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "3",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 740,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b75b2beb70de5d78",
+        "type": "ui-gauge",
+        "z": "8862c30b590da443",
+        "name": "DPU",
+        "group": "5c5c94abb7878a4a",
+        "order": 3,
+        "value": "payload.DPU",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "DPU",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "Defectos",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "0.1",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "0.4",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "1",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 710,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2c42e7fc0a02f1d7",
+        "type": "ui-gauge",
+        "z": "8862c30b590da443",
+        "name": "DPMO",
+        "group": "5c5c94abb7878a4a",
+        "order": 2,
+        "value": "payload.DPMO",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "DPMO",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "Defectos",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "233",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "6210",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "10000",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 710,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "12f2a07025f9932d",
+        "type": "ui-gauge",
+        "z": "8862c30b590da443",
+        "name": "Sigma",
+        "group": "5c5c94abb7878a4a",
+        "order": 4,
+        "value": "payload.Sigma",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Sigma",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "Sigma",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "3",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "5",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "6",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 710,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a16edf5cf9db818c",
+        "type": "ui-table",
+        "z": "8862c30b590da443",
+        "group": "f7aaf230a8572ccc",
+        "name": "Tiempos Globales",
+        "label": "",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": false,
+        "showSearch": false,
+        "deselect": false,
+        "selectionType": "none",
+        "columns": [
+            {
+                "title": "TOTAL(h)",
+                "key": "T_TOTAL",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "center"
+            },
+            {
+                "title": "AUTO(h)",
+                "key": "T_AUTO",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "center"
+            },
+            {
+                "title": "EMERGENCIA(h)",
+                "key": "T_EMER",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "center"
+            },
+            {
+                "title": "MANUAL(h)",
+                "key": "T_MANUAL",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "center"
+            }
+        ],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 550,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1264ef5bdc789b9b",
+        "type": "ui-gauge",
+        "z": "8862c30b590da443",
+        "name": "IndicadorAuto",
+        "group": "f7aaf230a8572ccc",
+        "order": 1,
+        "value": "payload.IndicadorAuto",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Produciendo",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "95",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 540,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d44c6f5c91306d1f",
+        "type": "ui-gauge",
+        "z": "8862c30b590da443",
+        "name": "IndicadorManual",
+        "group": "f7aaf230a8572ccc",
+        "order": 4,
+        "value": "payload.IndicadorManual",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Manual",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "5",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "10",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 550,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "607b0545191939d4",
+        "type": "ui-gauge",
+        "z": "8862c30b590da443",
+        "name": "IndicadorEmer",
+        "group": "f7aaf230a8572ccc",
+        "order": 3,
+        "value": "payload.IndicadorEmer",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Emergencia",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "5",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "10",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 540,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a77968f5625bb7c0",
+        "type": "ui-gauge",
+        "z": "8862c30b590da443",
+        "name": "IndicadorNoAuto",
+        "group": "f7aaf230a8572ccc",
+        "order": 2,
+        "value": "payload.IndicadorNoAuto",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "SinProducir",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "5",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "10",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 550,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1558f8575fa994bf",
+        "type": "ui-table",
+        "z": "8862c30b590da443",
+        "group": "f7aaf230a8572ccc",
+        "name": "Tiempos Estados",
+        "label": "",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": false,
+        "showSearch": false,
+        "deselect": false,
+        "selectionType": "none",
+        "columns": [
+            {
+                "title": "CICLO(s)",
+                "key": "T_CICLO",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "center"
+            },
+            {
+                "title": "REPOSO(s)",
+                "key": "T_REPOSO",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "center"
+            },
+            {
+                "title": "BASTIDOR(s)",
+                "key": "T_BASTIDOR",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "center"
+            },
+            {
+                "title": "SOLDADURA(s)",
+                "key": "T_SOLDADURA",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "center"
+            },
+            {
+                "title": "CALIDAD(s)",
+                "key": "T_CALIDAD",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "center"
+            },
+            {
+                "title": "RETORNO(s)",
+                "key": "T_RETORNO",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "center"
+            }
+        ],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 550,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fefe2492514da01f",
+        "type": "function",
+        "z": "8862c30b590da443",
+        "name": "Mantenimiento",
+        "func": "let datos = msg.payload;\n\nlet configuracion = flow.get(\"config_variables\", \"default\") || {};\nlet historico = flow.get(\"historico_tendencias\") || {};\n\nlet filas = [];\n\nconst unidades = {\n    \"Sol/Intensidad\": \"A\",\n    \"Sol/Tension_Fuente\": \"V\",\n    \"Sol/Tension_Arco\": \"V\",\n    \"Sol/Velocidad_Hilo\": \"m/min\",\n    \"Sol/Caudal_Gas\": \"l/min\",\n    \"Sol/Presion_Gas\": \"bar\",\n    \"Sol/Nivel_Gas\": \"%\",\n\n    \"Bas/Tension\": \"V\",\n    \"Bas/Intensidad\": \"A\",\n    \"Bas/Posicion\": \"mm\",\n    \"Bas/Velocidad\": \"mm/s\",\n\n    \"Rob/Tension\": \"V\",\n    \"Rob/Intensidad\": \"A\",\n    \"Rob/Servo_Temp1\": \"°C\",\n    \"Rob/Servo_Temp2\": \"°C\",\n    \"Rob/Servo_Temp3\": \"°C\",\n    \"Rob/Servo_Temp4\": \"°C\",\n    \"Rob/Servo_Temp5\": \"°C\",\n    \"Rob/Servo_Temp6\": \"°C\",\n    \"Rob/VelocidadSol\": \"mm/s\",\n    \"Rob/DistanciaSol\": \"mm\",\n\n    \"Cel/TensionF1\": \"V\",\n    \"Cel/TensionF2\": \"V\",\n    \"Cel/TensionF3\": \"V\",\n    \"Cel/Intensidad\": \"A\",\n    \"Cel/FactorPotencia\": \"\"\n};\n\n// CONFIGURACIÓN GENERAL\n// Ventana temporal utilizada si la variable no tiene una configuración propia.\nconst VENTANA_HORAS_DEFECTO = 24;\n\n// Mínimo de muestras para calcular una tendencia.\nconst MIN_MUESTRAS_DEFECTO = 100;\n\n// FUNCIÓN PARA CALCULAR PENDIENTE\nfunction calcularPendiente(muestras) {\n    if (muestras.length < MIN_MUESTRAS_DEFECTO) {\n        return null;\n    }\n\n    const n = muestras.length;\n    const tiempoInicial = muestras[0].timestamp;\n    let sumaX = 0;\n    let sumaY = 0;\n    let sumaXY = 0;\n    let sumaX2 = 0;\n\n    for (let i = 0; i < n; i++) {\n        // Tiempo desde la primera muestra expresado en horas\n        let x = (muestras[i].timestamp - tiempoInicial) / 3600000;\n        let y = muestras[i].valor;\n\n        sumaX += x;\n        sumaY += y;\n        sumaXY += x * y;\n        sumaX2 += x * x;\n    }\n\n    let denominador = (n * sumaX2) - (sumaX * sumaX);  \n\n    if (denominador === 0) {\n        return null;\n    }\n\n    let pendiente = ((n * sumaXY) - (sumaX * sumaY)) / denominador;\n\n    return pendiente;\n}\n\n\n// RECORRER ELEMENTOS\nfor (let grupo of [\"Sol\", \"Bas\", \"Rob\", \"Cel\"]) {\n\n    if (!datos[grupo]) continue;\n\n    for (let variable in datos[grupo]) {\n\n        let id = grupo + \"/\" + variable;\n\n        // CREAR CONFIGURACIÓN SI NO EXISTE\n        if (!configuracion[id]) {\n            configuracion[id] = {\n                min: 0,\n                max: 100,\n                aviso: 5,\n\n                usarMin: true,\n                usarMax: true,\n\n                ventanaHoras: VENTANA_HORAS_DEFECTO,\n                minMuestras: MIN_MUESTRAS_DEFECTO\n            };\n        }\n\n        let cfg = configuracion[id];\n\n        // COMPATIBILIDAD CON CONFIGURACIÓN EXISTENTE\n        if (cfg.ventanaHoras === undefined) {\n            cfg.ventanaHoras = VENTANA_HORAS_DEFECTO; \n        }\n        if (cfg.minMuestras === undefined) {\n            cfg.minMuestras = MIN_MUESTRAS_DEFECTO; \n        }\n\n        // DATOS\n        let valor = Number(datos[grupo][variable]);\n        let min = Number(cfg.min);\n        let max = Number(cfg.max);\n        let aviso = Number(cfg.aviso);\n        let usarMin = cfg.usarMin !== false;\n        let usarMax = cfg.usarMax !== false;\n        let ventanaHoras = Number(cfg.ventanaHoras);\n        let minMuestras = Number(cfg.minMuestras);\n\n        // VALIDACIÓN\n        if (!isFinite(ventanaHoras) ||\n            ventanaHoras <= 0) {\n\n            ventanaHoras = VENTANA_HORAS_DEFECTO;  \n        }\n\n        if (!isFinite(minMuestras) || minMuestras < 2) {\n            minMuestras = MIN_MUESTRAS_DEFECTO;    \n        }\n\n        // RANGO Y AVISOS ACTUALES\n        let rango = max - min;\n        let margen = rango * (aviso / 100);\n        let avisoMin = min + margen;\n        let avisoMax = max - margen;    \n\n        // ESTADO ACTUAL\n        let estado = \"OK\";\n\n        if ((usarMin && valor <= min) || (usarMax && valor >= max)) {\n            estado = \"ALARMA\";\n        }\n        else if ((usarMin && valor <= avisoMin) || (usarMax && valor >= avisoMax)) {\n            estado = \"AVISO\";\n        }\n\n        // HISTÓRICO\n        if (!historico[id]) {\n            historico[id] = [];\n        }\n\n        // Añadir nueva muestra\n        historico[id].push({\n            valor: valor,\n            timestamp: Date.now()\n\n        });\n\n\n        // ELIMINAR MUESTRAS FUERA DE LA VENTANA\n        let ahora = Date.now();\n        let limiteTiempo = ahora - (ventanaHoras * 3600000);\n\n        historico[id] =\n            historico[id].filter(\n                muestra =>\n                    muestra.timestamp >= limiteTiempo\n            );\n\n\n        let muestras = historico[id];\n\n        // CALCULAR PENDIENTE\n        let pendiente = null;\n\n        if (muestras.length >= minMuestras) {\n            pendiente = calcularPendiente(muestras);    \n        }\n\n        // TIEMPO HASTA LÍMITE\n        let tiempoLimite = null;\n\n        if (pendiente !== null && isFinite(pendiente) &&\n            pendiente !== 0 && rango > 0) {\n\n            // VA HACIA EL MÁXIMO\n            if (pendiente > 0 && usarMax) {\n                let distancia = max - valor;\n\n                if (distancia <= 0) {\n                    //Se ha llegado al límite\n                    tiempoLimite = 0;\n                }\n                else {\n                    tiempoLimite = distancia / pendiente;  \n                }\n            }\n            // VA HACIA EL MÍNIMO\n            else if (pendiente < 0 && usarMin){\n                let distancia = valor - min;\n\n                if (distancia <= 0) {\n                    // Ya está en el límite\n                    tiempoLimite = 0;\n\n                }\n                else {\n                    tiempoLimite = distancia / Math.abs(pendiente);       \n                }\n            }\n        }\n\n        // FORMATEAR PENDIENTE\n        let pendienteSalida = null;\n\n        if (pendiente !== null && isFinite(pendiente)) {\n\n            pendienteSalida = Number(pendiente.toFixed(3));\n        }\n\n        // FORMATEAR TIEMPO\n        let tiempoSalida = null;\n\n        if (\n            tiempoLimite !== null &&\n            tiempoLimite !== undefined &&\n             Number.isFinite(Number(tiempoLimite))\n        ) {\n            tiempoSalida = Number(Number(tiempoLimite).toFixed(1));\n        }\n\n        // CREAR FILA\n        filas.push({\n            id: id,\n            equipo: grupo,\n            variable: variable,\n            valor: Number(valor.toFixed(2)),\n            unidad: unidades[id] || \"\", \n            min: min,\n            max: max,\n            aviso: aviso,\n            usarMin: usarMin,\n            usarMax: usarMax,\n            estado: estado,\n\n            // PREDICCIÓN\n            pendienteHora: pendienteSalida,\n            tiempoLimite: tiempoSalida, \n\n            // Información de la ventana\n            ventanaHoras: ventanaHoras,\n            muestras: muestras.length\n                \n        });\n    }\n}\n\n// GUARDAR\nflow.set(\"config_variables\", configuracion, \"default\");\nflow.set(\"historico_tendencias\", historico);  \n\n// SALIDA\nmsg.payload = filas;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 1240,
+        "wires": [
+            [
+                "ee7357dd513024e3"
+            ]
+        ]
+    },
+    {
+        "id": "ee7357dd513024e3",
+        "type": "ui-template",
+        "z": "8862c30b590da443",
+        "group": "3cce5fba2f6d4cd0",
+        "page": "",
+        "ui": "",
+        "name": "tabla sensores",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "\n<template>\n\n    <div class=\"tabla-container\">\n\n        <table>\n            <!-- CABECERA DE LA TABLA -->\n            <thead>\n                <tr>\n                    <th>Equipo</th>\n                    <th>Variable</th>\n                    <th>Valor</th>\n                    <th>Unidad</th>\n                    <th>Mínimo</th>\n                    <th>Máximo</th>\n                    <th>Aviso %</th>\n                    <th>Estado</th>\n                    <th>Pendiente/h</th>\n                    <th>Tiempo Revisión</th>\n\n                </tr>\n            </thead>\n\n\n            <tbody>\n                <!-- SE GENERA UNA FILA POR VARIABLE -->\n                <tr v-for=\"fila in msg.payload\" :key=\"fila.id\" :class=\"fila.estado.toLowerCase()\">\n\n                    <!-- EQUIPO -->\n                    <td class=\"equipo\">\n                        {{ fila.equipo }}\n                    </td>\n\n                    <!-- VARIABLE -->\n                    <td class=\"variable\">\n                        {{ fila.variable }}\n                    </td>\n\n                    <!-- VALOR -->\n                    <td class=\"valor\">\n                        {{ Number(fila.valor).toFixed(2) }}\n                    </td>\n\n                    <!-- UNIDAD -->\n                    <td class=\"unidad\">\n                        {{ fila.unidad }}\n                    </td>\n\n                    <!-- MÍNIMO -->\n                    <td>\n                        <input\n                            type=\"checkbox\"\n                            :checked=\"fila.usarMin\"\n                            @change=\"\n                                cambiarLimite(\n                                    fila,\n                                    'usarMin',\n                                    $event.target.checked\n                                )\n                            \"\n                        >\n\n                        <input\n                            type=\"number\"\n                            step=\"0.01\"\n                            :value=\"fila.min\"\n                            :disabled=\"!fila.usarMin\"\n                            @change=\"\n                                cambiarLimite(\n                                    fila,\n                                    'min',\n                                    $event.target.value\n                                )\n                            \"\n                        >\n\n                    </td>\n\n\n                    <!-- MÁXIMO -->\n                    <td>\n\n                        <input\n                            type=\"checkbox\"\n                            :checked=\"fila.usarMax\"\n                            @change=\"\n                                cambiarLimite(\n                                    fila,\n                                    'usarMax',\n                                    $event.target.checked\n                                )\n                            \"\n                        >\n\n                        <input\n                            type=\"number\"\n                            step=\"0.01\"\n                            :value=\"fila.max\"\n                            :disabled=\"!fila.usarMax\"\n                            @change=\"\n                                cambiarLimite(\n                                    fila,\n                                    'max',\n                                    $event.target.value\n                                )\n                            \"\n                        >\n\n                    </td>\n\n                    <!-- AVISO % -->\n                    <td>\n\n                        <input\n                            type=\"number\"\n                            step=\"0.1\"\n                            min=\"0\"\n                            max=\"100\"\n                            :value=\"fila.aviso\"\n                            @change=\"\n                                cambiarLimite(\n                                    fila,\n                                    'aviso',\n                                    $event.target.value\n                                )\n                            \"\n                        >\n\n                    </td>\n\n                    <!-- ESTADO ACTUAL -->\n                    <td>\n                        <span class=\"estado\":class=\"fila.estado.toLowerCase()\">\n                            <span v-if=\"fila.estado === 'OK'\" >\n                                OK\n                            </span>\n\n                            <span v-else-if=\"fila.estado === 'AVISO'\" >\n                                AVISO\n                            </span>\n\n                            <span v-else>\n                                ALARMA\n                            </span>\n\n                        </span>\n                    </td>\n\n                    <!-- PENDIENTE POR HORA -->\n                    <td class=\"pendiente\">\n\n                        <span\n                            v-if=\"\n                                fila.pendienteHora !== null\n                            \"\n                            :class=\"{\n                                positivo:\n                                    fila.pendienteHora > 0,\n\n                                negativo:\n                                    fila.pendienteHora < 0,\n\n                                neutro:\n                                    fila.pendienteHora === 0\n                            }\"\n                        >\n\n                            <span\n                                v-if=\"\n                                    fila.pendienteHora > 0\n                                \"\n                            >\n                                ↗\n                            </span>\n\n                        <span\n                                v-else-if=\"\n                                    fila.pendienteHora < 0\n                                \"\n                            >\n                                ↘\n                            </span>\n\n                        <span v-else>\n                                →\n                            </span>\n\n                        {{ Number(fila.pendienteHora).toFixed(3) }}\n                        \n                        <small>\n                                {{ fila.unidad }}/h\n                            </small>\n\n                        </span>\n\n                        <span\n                            v-else\n                            class=\"sin-datos\"\n                        >\n                            --\n                        </span>\n\n                    </td>\n\n                    <!-- TIEMPO HASTA LÍMITE --> \n                    <td class=\"tiempo\">\n\n                        <span\n                            v-if=\"\n                                fila.tiempoLimite !== null\n                            \"\n                            :class=\"{\n                                urgente:\n                                    fila.tiempoLimite <= 24,\n\n                                proximo:\n                                    fila.tiempoLimite > 24 &&\n                                    fila.tiempoLimite <= 120\n                            }\"\n                        >\n\n                            {{ formatearTiempo(\n                                fila.tiempoLimite\n                            ) }}\n\n                        </span>\n\n                        <span\n                            v-else\n                            class=\"sin-datos\"\n                        >\n                        --\n\n                        </span>\n\n                    </td>\n\n                </tr>\n\n            </tbody>\n\n        </table>\n\n    </div>\n\n</template>\n\n\n<script>\n    export default {\n\n    methods: {\n        // CAMBIAR CONFIGURACIÓN\n        cambiarLimite(fila, campo, valor) {\n\n            this.send({\n                topic: \"config\",\n                payload: {\n                    id: fila.id,\n                    campo: campo,\n                    valor:typeof valor === \"boolean\"? valor: Number(valor)\n                }\n            });\n\n        },\n\n\n        // FORMATEAR TIEMPO\n        formatearTiempo(horas) {\n            let horasTotales = Math.floor(horas);\n            //>25 años\n            if (horas >= 219000) { \n                horasTotales = 219000;\n            }\n\n            if (horas <= 0 || horas === null || horas === undefined ||!isFinite(horas)) {\n                return \"No valido\";\n            }\n\n            let anos = Math.floor(horasTotales / (365 * 24));\n            let diasRestantes = Math.floor((horasTotales % (365 * 24)) / 24);\n            let h = horasTotales % 24;\n            let resultado = \"\";\n\n            // AÑOS\n            if (anos > 0) {\n                resultado += anos + \" a\";     \n            }\n            // DÍAS\n            if (diasRestantes > 0) {\n                if (resultado !== \"\") {\n                    resultado += \" \";\n                }\n                resultado += diasRestantes + \" d\";\n            }\n            // HORAS\n            if (h > 0) {\n                if (resultado !== \"\") {\n                    resultado += \" \";\n                }\n                resultado += h + \" h\";\n            }\n\n            return resultado.trim();\n        }\n\n    }\n\n}\n\n</script>\n<style>\n    .tabla-container {\n        width: 100%;\n        overflow-x: auto;\n    }\n\n\n    table {\n        width: 100%;\n        border-collapse: collapse;\n        font-size: 14px;\n    }\n\n\n    th {\n        background: #263238;\n        color: white;\n        padding: 10px;\n        text-align: center;\n        position: sticky;\n        top: 0;\n        white-space: nowrap;\n    }\n\n\n    td {\n        padding: 7px;\n        text-align: center;\n        border-bottom: 1px solid #444;\n    }\n\n\n    .equipo {\n        text-align: center;\n        font-weight: bold;\n    }\n\n\n    .variable {\n        text-align: center;\n    }\n\n\n    .valor {\n        text-align: center;\n        font-weight: bold;\n        font-size: 16px;\n    }\n\n\n    .unidad {\n        font-weight: bold;\n        white-space: nowrap;\n    }\n\n\n    input {\n        width: 80px;\n        padding: 6px;\n        border-radius: 5px;\n        border: 1px solid #777;\n        background: #222;\n        color: white;\n        text-align: center;\n    }\n\n\n    input[type=\"checkbox\"] {\n        width: 18px;\n        height: 18px;\n        cursor: pointer;\n        vertical-align: middle;\n    }\n\n\n    input[type=\"number\"]:disabled {\n        opacity: 0.4;\n    }\n\n    /* ESTADO ACTUAL*/\n    .estado {\n        font-weight: bold;\n        padding: 5px 10px;\n        border-radius: 6px;\n    }\n\n\n    .estado.ok {\n        background: #1b5e20;\n        color: white;\n    }\n\n\n    .estado.aviso {\n        background: #e65100;\n        color: white;\n    }\n\n\n    .estado.alarma {\n        background: #b71c1c;\n        color: white;\n    }\n\n\n    tr.alarma {\n        background: rgba(244, 67, 54, 0.15);\n    }\n\n\n    tr.aviso {\n        background: rgba(255, 152, 0, 0.15);\n    }\n\n\n    /* PENDIENTE*/\n    .pendiente {\n        font-weight: bold;\n        white-space: nowrap;\n    }\n\n\n    .pendiente .positivo {\n        color: #ff9800;\n    }\n\n\n    .pendiente .negativo {\n        color: #29b6f6;\n    }\n\n\n    .pendiente .neutro {\n        color: #66bb6a;\n    }\n\n\n    .pendiente small {\n        font-size: 10px;\n        opacity: 0.8;\n    }\n\n\n    /* TIEMPO*/\n    .tiempo {\n        font-weight: bold;\n        white-space: nowrap;\n    }\n\n\n    .tiempo .proximo {\n        color: #ff9800;\n    }\n\n\n    .tiempo .urgente {\n        color: #f44336;\n    }\n\n\n    .sin-datos {\n        color: #777;\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 740,
+        "y": 1240,
+        "wires": [
+            [
+                "8469904a9613a427"
+            ]
+        ]
+    },
+    {
+        "id": "8d8459ed2c33b0c0",
+        "type": "ui-chart",
+        "z": "8862c30b590da443",
+        "group": "924bf15b84d21479",
+        "name": "Camara",
+        "label": "Camara",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "24",
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "20000",
+        "colors": [
+            "#f6f85d",
+            "#ff0000",
+            "#ffb30f",
+            "#2ca02c",
+            "#a347e1",
+            "#000000",
+            "#ff9896",
+            "#67bcbb",
+            "#50a3e2"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#a3a3a3"
+        ],
+        "gridColorDefault": false,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 720,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6437c3583a1f895a",
+        "type": "function",
+        "z": "8862c30b590da443",
+        "name": "Camara Chart",
+        "func": "let cam = msg.payload.Cam;\n\nfor (let variable in cam) {\n\n    node.send({\n        topic: variable,\n        payload: cam[variable],\n    });\n\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 1200,
+        "wires": [
+            [
+                "8d8459ed2c33b0c0"
+            ]
+        ]
+    },
+    {
+        "id": "7a62fbdf531d9829",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.30.2",
+            "node-red-node-mysql": "3.0.0"
+        }
+    }
+]
