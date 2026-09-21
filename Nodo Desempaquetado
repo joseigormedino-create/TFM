@@ -1,0 +1,81 @@
+const alarmas = msg.payload.Alarmas;
+
+const nombres = [
+    "Seta emergencia",
+    "Puerta",
+    "Barrera",
+    "Emergencia",
+    "Robot",
+    "Camara",
+    "Soldadura",
+    "Bastidor",
+    "MQTT",
+    "Ciclo",
+    "Reserva10",
+    "Reserva11",
+    "Reserva12",
+    "Reserva13",
+    "Reserva14",
+    "Reserva15",
+    "Reserva16",
+    "Reserva17",
+    "Reserva18",
+    "Reserva19",
+    "Reserva20",
+    "Reserva21",
+    "Reserva22",
+    "Reserva23",
+    "Reserva24",
+    "Reserva25",
+    "Reserva26",
+    "Reserva27",
+    "Reserva28",
+    "Reserva29",
+    "Reserva30",
+    "Reserva31"
+];
+
+// Recupero valores guardados
+const anterior = context.get("alarmasAnterior") ?? 0;
+let historial = context.get("historialAlarmas") ?? [];
+
+const ahora = new Date();
+let eventos = [];
+
+for (let i = 0; i < 32; i++) {
+    //desplazo bit que quiero mirar y comparo con 1
+    const antes = ((anterior >>> i) & 1) === 1;
+    const actual = ((alarmas >>> i) & 1) === 1;
+
+    if (antes !== actual) {
+
+        const evento = {
+            alarma: nombres[i],
+            fecha: ahora.toLocaleDateString("es-ES"),
+            hora: ahora.toLocaleTimeString("es-ES"),
+            activa: actual,
+            estado: actual
+                ? '<span style="background-color:#dc3545;color:white;font-weight:bold;padding:4px 10px;border-radius:5px;display:inline-block">ALARMA</span>'
+                : '<span style="background-color:#198754;color:white;font-weight:bold;padding:4px 10px;border-radius:5px;display:inline-block">OK</span>'
+        };
+        //meto en array de eventos la alarma detectada
+        eventos.push(evento);
+
+        // Añadir alarma al histórico
+        historial.push(evento);
+    }
+}
+
+// Limitar memoria (últimas 500 alarmas)
+if (historial.length > 500) {
+    historial = historial.slice(-500); //borra a partir del elemento 500
+}
+
+// Guardar datos
+context.set("alarmasAnterior", alarmas);
+context.set("historialAlarmas", historial);
+
+// Enviar los eventos nuevos
+msg.payload = eventos;
+
+return msg;
